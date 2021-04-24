@@ -1,0 +1,11 @@
+html
+    head
+        title MyApp 
+    body(class=["myClass"])
+        h1(id="MyId")= title 
+        //- =title means it will print the variable title
+        p 
+            h3 sub header
+        ul
+            each val in list 
+                li= val
