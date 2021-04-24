@@ -29,7 +29,7 @@ const nav = [{ link: '/books', title: 'Books' },
 
 const bookRouter = require('./src/routes/bookRoutes');
 const adminRouter = require('./src/routes/adminRoutes')(nav);
-const authRouter = require('./src/routes/authRoutes');
+const authRouter = require('./src/routes/authRoutes')(nav);
 //const appRefresh = setInterval(window.location.reload(false), 6000);
 
 app.use('/books', bookRouter);
